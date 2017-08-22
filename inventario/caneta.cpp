@@ -1,6 +1,4 @@
-
 #include "caneta.hpp" //as "" fazem a busca na memsa pasta do arquivo
-
 
 
 Caneta::Caneta(){
@@ -10,6 +8,14 @@ Caneta::Caneta(){
 }
 
 Caneta::~Caneta(){
+	std::cout << "Destruindo o objeto " << getNome() << std::endl;
+}
+
+std::string Caneta::getNome(){
+	return nome;
+}
+void Caneta::setNome(std::string nome){
+	this->nome = nome;
 }
 
 std::string Caneta::getCor(){

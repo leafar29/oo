@@ -9,6 +9,7 @@ using namespace std;
 class Caneta {
   private:
 	//Atributos
+	string nome;
 	string cor;
 	string marca;
 	float preco;
@@ -20,6 +21,9 @@ class Caneta {
 	~Caneta();
 
 	//Metodos acessores
+	string getNome();
+	void setNome(string nome);
+
 	string getCor();
 	void setCor(string cor);
 
