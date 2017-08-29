@@ -9,8 +9,6 @@ using namespace std;
 
 	}
 
-	Pessoa::Pessoa(){}
-
 	string Pessoa::getNome(){
 		return nome;
 	}
